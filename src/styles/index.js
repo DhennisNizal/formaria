@@ -8,6 +8,7 @@ export const color = {
   transparent: "rgba(0,0,0,0)",
   white: "#ffffff",
   black: "#000000",
+  brown: "#c68863",
 };
 
 export const shadow = {
