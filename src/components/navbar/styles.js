@@ -1,20 +1,21 @@
 import styled from "styled-components";
-import { color, shadow } from "../../styles";
+import { color } from "../../styles";
 
 import { Button } from "antd";
 
 export const Wrapper = styled.nav`
   display: flex;
   justify-content: center;
-  padding: 1rem;
   font-family: "Roboto", sans-serif;
 `;
 
 export const Container = styled.div`
+  position: fixed;
+  z-index: 999;
   min-width: 70%;
   padding: 0.8rem 2rem;
   background-color: ${color.white};
-  box-shadow: ${shadow.thin};
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
   border-radius: 2rem;
   display: flex;
   align-items: center;
