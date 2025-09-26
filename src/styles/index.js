@@ -10,6 +10,8 @@ export const color = {
   black: "#000000",
   brown: "#c68863",
   lightGray: "#aaaaaa",
+  darkGray: "#474747",
+  lightBrown: "#eee8e4",
 };
 
 export const shadow = {
