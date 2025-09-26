@@ -1,9 +1,10 @@
 import "./styles/global.css";
+import HomePage from "./pages/home-page";
 
 function App() {
   return (
     <>
-      <h1>Hello world</h1>
+      <HomePage />
     </>
   );
 }

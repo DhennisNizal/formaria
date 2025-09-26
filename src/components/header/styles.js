@@ -8,15 +8,16 @@ export const Wrapper = styled.nav`
   ${breakpoint.tablet} {
     display: flex;
     justify-content: center;
-    padding: 1rem;
   }
 `;
 
 export const Container = styled.div`
+  position: fixed;
+  z-index: 999;
   width: 100%;
   padding: 0.8rem 2rem;
   background-color: ${color.white};
-  box-shadow: ${shadow.thin};
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,6 +25,7 @@ export const Container = styled.div`
   ${breakpoint.tablet} {
     width: 80%;
     border-radius: 2rem;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
   }
 
   .menu-icon {
