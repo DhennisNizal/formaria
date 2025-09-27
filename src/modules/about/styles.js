@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { color, breakpoint } from "../../styles";
 
 export const AboutWrapper = styled.section`
-  margin: 5rem 0;
+  margin: 8rem 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -16,7 +16,6 @@ export const Content = styled.div`
   ${breakpoint.tablet} {
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
   }
 
   ${breakpoint.mobile} {
