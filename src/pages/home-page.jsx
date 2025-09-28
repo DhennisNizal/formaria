@@ -3,6 +3,7 @@ import PageLayout from "../components/page-layout";
 import Hero from "../modules/hero";
 import About from "../modules/about";
 import Rooms from "../modules/rooms";
+import WhyChooseUs from "../modules/why-choose-us";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Hero />
       <About />
       <Rooms />
+      <WhyChooseUs />
     </PageLayout>
   );
 };
