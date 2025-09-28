@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { navItems } from "../navbar/links";
+import hideOnScroll from "../../utils/helpers/hideOnScroll";
 
 import * as S from "./styles";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const scrollDirection = hideOnScroll();
 
   return (
     <>
-      <S.Wrapper>
+      <S.Wrapper scrollDirection={scrollDirection}>
         <S.Container>
           <S.Logo>Formaria</S.Logo>
           <IoIosMenu className="menu-icon" onClick={() => setOpen(true)} />

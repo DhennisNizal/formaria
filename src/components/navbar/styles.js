@@ -1,17 +1,25 @@
 import styled from "styled-components";
 import { color } from "../../styles";
-
 import { Button } from "antd";
 
-export const Wrapper = styled.nav`
+export const Wrapper = styled.nav.withConfig({
+  shouldForwardProp: (prop) => prop !== "scrollDirection",
+})`
   display: flex;
   justify-content: center;
   font-family: "Roboto", sans-serif;
+
+  /* slide effect */
+  position: fixed;
+  top: ${({ scrollDirection }) =>
+    scrollDirection === "down" ? "-120px" : "1rem"};
+  left: 0;
+  width: 100%;
+  transition: top 0.4s ease-in-out;
+  z-index: 1000;
 `;
 
 export const Container = styled.div`
-  position: fixed;
-  z-index: 999;
   min-width: 70%;
   padding: 0.8rem 2rem;
   background-color: ${color.white};
