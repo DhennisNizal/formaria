@@ -12,6 +12,7 @@ export const color = {
   lightGray: "#aaaaaa",
   darkGray: "#474747",
   lightBrown: "#eee8e4",
+  lightKhaki: "#d9d2bf",
 };
 
 export const shadow = {
