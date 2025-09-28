@@ -4,6 +4,7 @@ import Hero from "../modules/hero";
 import About from "../modules/about";
 import Rooms from "../modules/rooms";
 import WhyChooseUs from "../modules/why-choose-us";
+import Footer from "../components/footer";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <About />
       <Rooms />
       <WhyChooseUs />
+      <Footer />
     </PageLayout>
   );
 };
