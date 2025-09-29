@@ -9,11 +9,21 @@ import Footer from "../components/footer";
 const HomePage = () => {
   return (
     <PageLayout>
-      <Hero />
-      <About />
-      <Rooms />
-      <WhyChooseUs />
-      <Footer />
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="rooms">
+        <Rooms />
+      </section>
+      <section id="why-choose-us">
+        <WhyChooseUs />
+      </section>
+      <section id="contact">
+        <Footer />
+      </section>
     </PageLayout>
   );
 };
