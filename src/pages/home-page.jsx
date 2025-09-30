@@ -1,29 +1,33 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import PageLayout from "../components/page-layout";
-import Hero from "../modules/hero";
-import About from "../modules/about";
-import Rooms from "../modules/rooms";
-import WhyChooseUs from "../modules/why-choose-us";
-import Footer from "../components/footer";
+import Loader from "../components/loader";
+
+const Hero = lazy(() => import("../modules/hero"));
+const About = lazy(() => import("../modules/about"));
+const Rooms = lazy(() => import("../modules/rooms"));
+const WhyChooseUs = lazy(() => import("../modules/why-choose-us"));
+const Footer = lazy(() => import("../components/footer"));
 
 const HomePage = () => {
   return (
     <PageLayout>
-      <section id="hero">
-        <Hero />
-      </section>
-      <section id="about">
-        <About />
-      </section>
-      <section id="rooms">
-        <Rooms />
-      </section>
-      <section id="why-choose-us">
-        <WhyChooseUs />
-      </section>
-      <section id="contact">
-        <Footer />
-      </section>
+      <Suspense fallback={<Loader />}>
+        <section id="hero">
+          <Hero />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="rooms">
+          <Rooms />
+        </section>
+        <section id="why-choose-us">
+          <WhyChooseUs />
+        </section>
+        <section id="contact">
+          <Footer />
+        </section>
+      </Suspense>
     </PageLayout>
   );
 };
