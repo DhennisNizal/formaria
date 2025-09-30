@@ -1,4 +1,4 @@
-import{d as r,c as o,b as e,G as a,j as t}from"./index-CsNb3vqo.js";const s="/formaria/assets/why-choose-us-DwFDtm_F.webp",l=r.section`
+import{d as r,c as o,b as e,G as a,j as t}from"./index-DvXcgLyQ.js";const s="/formaria/assets/why-choose-us-DwFDtm_F.webp",l=r.section`
   width: 100%;
   height: 100%;
   display: block;

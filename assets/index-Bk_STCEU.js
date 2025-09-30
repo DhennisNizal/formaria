@@ -1,4 +1,4 @@
-import{c as e,b as r,d as o,j as t}from"./index-CsNb3vqo.js";const n="/formaria/assets/hero-cover-BA5qSQ2l.webp",a=o.section`
+import{c as e,b as r,d as o,j as t}from"./index-DvXcgLyQ.js";const n="/formaria/assets/hero-cover-BA5qSQ2l.webp",a=o.section`
   background-image: linear-gradient(
       to bottom,
       ${e.transparent}30%,
