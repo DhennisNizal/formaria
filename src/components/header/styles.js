@@ -2,12 +2,24 @@ import styled from "styled-components";
 import { Button } from "antd";
 import { color, shadow, breakpoint } from "../../styles";
 
-export const Wrapper = styled.nav`
+export const Wrapper = styled.nav.withConfig({
+  shouldForwardProp: (prop) => prop !== "scrollDirection",
+})`
   font-family: "Roboto", sans-serif;
+
+  position: fixed;
+  top: ${({ scrollDirection }) =>
+    scrollDirection === "down" ? "-120px" : "0"};
+  left: 0;
+  width: 100%;
+  transition: top 0.4s ease-in-out;
+  z-index: 888;
 
   ${breakpoint.tablet} {
     display: flex;
     justify-content: center;
+    top: ${({ scrollDirection }) =>
+      scrollDirection === "down" ? "-120px" : "16px"};
   }
 `;
 
@@ -57,6 +69,10 @@ export const Sidebar = styled.aside`
   padding: 4rem 1.5rem 2rem 1.5rem;
   display: flex;
   flex-direction: column;
+
+  ${breakpoint.tablet} {
+    width: 380px;
+  }
 `;
 
 export const Overlay = styled.div`

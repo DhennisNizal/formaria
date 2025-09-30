@@ -1,6 +1,6 @@
 export const navItems = [
-  { label: "Who we are", path: "/about" },
-  { label: "Our rooms", path: "/rooms" },
-  { label: "Why choose us", path: "/rooms" },
-  { label: "Contact us", path: "/contact" },
+  { label: "Who we are", to: "/#about" },
+  { label: "Our rooms", to: "/#rooms" },
+  { label: "Why Choose Us", to: "/#why-choose-us" },
+  { label: "Contact us", to: "/#contact" },
 ];
