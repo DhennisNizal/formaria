@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <S.Wrapper scrollDirection={scrollDirection}>
       <S.Container>
-        <HashLink smooth to="/#hero" scroll={scrollWithOffset}>
+        <HashLink smooth to="#hero" scroll={scrollWithOffset}>
           <S.Logo>Formaria</S.Logo>
         </HashLink>
 

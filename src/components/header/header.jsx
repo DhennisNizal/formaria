@@ -20,7 +20,7 @@ const Header = () => {
     <>
       <S.Wrapper scrollDirection={scrollDirection}>
         <S.Container>
-          <HashLink smooth to="/#hero" scroll={scrollWithOffset}>
+          <HashLink smooth to="#hero" scroll={scrollWithOffset}>
             <S.Logo>Formaria</S.Logo>
           </HashLink>
           <IoIosMenu className="menu-icon" onClick={() => setOpen(true)} />
